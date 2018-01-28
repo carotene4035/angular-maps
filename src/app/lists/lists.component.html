@@ -1,0 +1,7 @@
+<div *ngFor='let plot of plots' class="card" style="width: 18rem;">
+  <div class="card-body" [class.selected]='plot.selected' (click)='cardClicked(plot.id)'>
+    <h5 class="card-title">ID: {{plot.id}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ plot.longitude }}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{ plot.latitude }}</h6>
+  </div>
+</div>
